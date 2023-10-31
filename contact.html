@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <style>
+        html{
+            background-image: linear-gradient(rgb(153, 235, 174), rgb(6, 64, 32));
+            font-family: 'Caveat', cursive;
+            font-family: 'Lora', serif;
+            font-family: 'Maven Pro', sans-serif;
+        }
+        #contact{
+            border: black solid 3px;
+            text-align: center;
+            padding: 20px;
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top: 15px;
+        }
+        footer{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+        #firstp{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact details:</h1>
+    <p id="firstp">If you would like to tell me something you can use my details added below or use the contact form.</p>
+    <br/>
+    <h2>Contact details:</h2>
+    <p>E-mail: example@example.com</p>
+    <p>Phone number xxxx xxxxx</p>
+    <a href="https://www.instagram.com/">Social media(EXAMPLE)</a>
+
+    <hr/>
+
+    <div id="contact">
+        <h2>Contact Form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="topic">Topic:</label>
+        <select id="topic" name="topic">
+            <option value="Questiom">Question</option>
+            <option value="Comment">Comment</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Przycisk do przesłania formularza -->
+        <input type="button" value="Send" onclick="Sendformula()">
+    </form>
+
+    <script>
+        function Sendformula() {
+            // Pobierz wartości pól formularza
+            var imie = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var temat = document.getElementById("topic").value;
+            var wiadomosc = document.getElementById("message").value;
+
+            // Wyświetl dane (możesz je przetwarzać lub wyświetlać na stronie)
+            alert("name: " + name + "\nEmail: " + email + "\ntopic: " + topic + "\nmessage: " + message);
+        }
+    </script>
+    </div>
+    
+    <hr/>
+    <footer>
+        &copy; 2023 Maja Jablonska. All rights reserved.
+    </footer>
+</body>
+</html>

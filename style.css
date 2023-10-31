@@ -1,0 +1,87 @@
+html{
+    font-family: 'Caveat', cursive;
+font-family: 'Lora', serif;
+font-family: 'Maven Pro', sans-serif;
+background-image: linear-gradient(rgb(161, 218, 225), rgb(132, 224, 107))
+
+}
+header{
+    text-align: center;
+}
+#f-l{
+    color: #05590e;
+}
+h1{
+    color: #10597b;
+    text-decoration: underline;
+}
+h2{
+    color: #176e70;
+    
+}
+p{
+    color: #159A9C;
+}
+#ps-text{
+    font-size: small;
+    color: #159A9C;
+    border-style: solid;
+    border-color: #B4BEC9;
+    background-color: #c5f6e6;
+    border-radius:10px;
+    padding: 5px;
+    position: relative;
+    margin-left: 35%;
+    margin-right: 35%;
+
+    
+}
+section{
+    padding: 5px;
+    text-align: center;
+}
+.link{
+    color: #05590e;
+}
+
+    
+.text{
+    border: black solid 2px;
+    border-radius: 10px;
+    background-color: rgb(199, 241, 225);
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+   
+}
+.photo{
+    text-align: center;
+   
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+h2{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+a{
+    text-decoration:underline;
+
+}
+a:hover{
+    color: rgb(102, 151, 249);
+
+}
+#firsttext{
+    margin-left: 10%;
+    margin-right: 10%;
+    
+
+}

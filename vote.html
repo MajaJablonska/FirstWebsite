@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Voting List</title>
+        <style>
+            html{
+                background-color: rgb(224, 246, 213);
+                font-family: 'Caveat', cursive;
+                font-family: 'Lora', serif;
+                font-family: 'Maven Pro', sans-serif;
+                
+
+            }
+            footer{
+                text-align: center;
+            }
+        </style>
+</head>
+<body>
+    
+    <h2>Vote for Your Favorite Place:</h2>
+    <ul id="voting-list">
+        <li>
+            <label>
+                <input type="radio" name="vote" value="Banff">
+                Banff
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="radio" name="vote" value="Old Bagan">
+                Old Bagan
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="radio" name="vote" value="Bora Bora">
+                Bora Bora
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="radio" name="vote" value="Machu Picchu">
+                Machu Picchu
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="radio" name="vote" value="Lofoten Island">
+                Lofoten Island
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="radio" name="vote" value="The Waitomo Glowworm Caves">
+                The Waitomo Glowworm Caves
+            </label>
+        </li>
+    </ul>
+    <button onclick="submitVote()">Vote</button>
+    <div id="result"></div>
+
+    <script>
+        function submitVote() {
+            var selectedOption = document.querySelector('input[name="vote"]:checked');
+            if (selectedOption) {
+                var result = selectedOption.value;
+                document.getElementById('result').innerHTML = 'You voted for: ' + result;
+            } else {
+                alert('Please select an option to vote.');
+            }
+        }
+    </script><hr/>
+
+<iframe style="margin-left: 28%;" width="560" height="315" src="https://www.youtube.com/embed/-LAzpAm4Mlg?si=PDUjwFFImWeGSLKq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <hr/>
+    <footer>
+       &copy; 2023 Maja Jablonska. All rights reserved.
+    </footer>
+</body>
+</html>
+<!-- Please note that this example is purely client-side and doesn't store or process votes on a server. If you need to store and process votes, you would need server-side scripting (such as PHP or a database) to handle the data submitted by users. -->
